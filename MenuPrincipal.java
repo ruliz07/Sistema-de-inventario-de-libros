@@ -38,7 +38,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jLabelTitulo.setText("Inventario de Biblioteca");
 
         jButtonNuevo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButtonNuevo.setText("Nuevo Registro");
+        jButtonNuevo.setText("Nuevo Prestamo");
         jButtonNuevo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonNuevoActionPerformed(evt);
@@ -46,7 +46,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         });
 
         jButtonCargar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButtonCargar.setText("Leer Registro");
+        jButtonCargar.setText("Consultar Prestamo");
         jButtonCargar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonCargarActionPerformed(evt);
@@ -79,7 +79,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabelTitulo)))
-                .addContainerGap())
+                .addContainerGap(18, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -95,7 +95,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 .addGap(20, 20, 20))
         );
 
-        setSize(new java.awt.Dimension(398, 406));
+        setSize(new java.awt.Dimension(406, 406));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -103,7 +103,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private void jButtonCargarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCargarActionPerformed
 
         //Se crea un filtro para que se puedan abrir los archivos txt
-        FileNameExtensionFilter filtro = new FileNameExtensionFilter("Archivo de texto", "txt");
+        FileNameExtensionFilter filtro = new FileNameExtensionFilter("Archivo de texto", "txt");//Tipo de archivo en el que se guardara el registro
         JFileChooser fileChooserCargar = new JFileChooser();
         fileChooserCargar.setFileFilter(filtro);
         fileChooserCargar.setDialogTitle("Abrir..");
@@ -125,7 +125,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private void jButtonSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSalirActionPerformed
 
         JOptionPane.showMessageDialog(this, "Adios, Good bye, Sayonara ", "XD", JOptionPane.INFORMATION_MESSAGE);
-        System.exit(0); // para salir del programa...
+        System.exit(0); //mensaje para salir del programa...
 
     }//GEN-LAST:event_jButtonSalirActionPerformed
     /**
