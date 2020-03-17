@@ -36,7 +36,6 @@ public class Borrar extends javax.swing.JFrame {
         jLabelTitulo = new javax.swing.JLabel();
         jLabelNombre = new javax.swing.JLabel();
         jTextFieldNombre = new javax.swing.JTextField();
-        jButtonLimpiar = new javax.swing.JButton();
         jButtonAtras = new javax.swing.JButton();
         jButtonBorrar = new javax.swing.JButton();
 
@@ -48,14 +47,6 @@ public class Borrar extends javax.swing.JFrame {
         jLabelTitulo.setText("Borrar Prestamo");
 
         jLabelNombre.setText("Nombre:");
-
-        jButtonLimpiar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButtonLimpiar.setText("Limpiar dato");
-        jButtonLimpiar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonLimpiarActionPerformed(evt);
-            }
-        });
 
         jButtonAtras.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButtonAtras.setText("Atras");
@@ -84,9 +75,7 @@ public class Borrar extends javax.swing.JFrame {
                         .addComponent(jLabelNombre)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextFieldNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButtonLimpiar, javax.swing.GroupLayout.DEFAULT_SIZE, 142, Short.MAX_VALUE)
-                        .addContainerGap())
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jButtonAtras)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -95,19 +84,18 @@ public class Borrar extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(106, 106, 106)
                 .addComponent(jLabelTitulo)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 124, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabelTitulo)
-                .addGap(71, 71, 71)
+                .addGap(75, 75, 75)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabelNombre)
-                    .addComponent(jTextFieldNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonLimpiar))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 92, Short.MAX_VALUE)
+                    .addComponent(jTextFieldNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 93, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButtonAtras)
                     .addComponent(jButtonBorrar))
@@ -122,11 +110,6 @@ public class Borrar extends javax.swing.JFrame {
         this.setVisible(false);
         ventanaPadre.setVisible(true);
     }//GEN-LAST:event_jButtonAtrasActionPerformed
-
-    private void jButtonLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLimpiarActionPerformed
-
-        jTextFieldNombre.setText("");
-    }//GEN-LAST:event_jButtonLimpiarActionPerformed
 
     private void jButtonBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBorrarActionPerformed
 
@@ -192,7 +175,6 @@ public class Borrar extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonAtras;
     private javax.swing.JButton jButtonBorrar;
-    private javax.swing.JButton jButtonLimpiar;
     private javax.swing.JLabel jLabelNombre;
     private javax.swing.JLabel jLabelTitulo;
     private javax.swing.JTextField jTextFieldNombre;

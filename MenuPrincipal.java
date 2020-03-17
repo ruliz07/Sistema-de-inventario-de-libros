@@ -124,7 +124,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
     private void jButtonSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSalirActionPerformed
 
-        JOptionPane.showMessageDialog(this, "Adios, Good bye, Sayonara ", "XD", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(this, "Los Cambios Que No Hayas Guardado Se Perderán", "Salir ?", JOptionPane.INFORMATION_MESSAGE);
         System.exit(0); //mensaje para salir del programa...
 
     }//GEN-LAST:event_jButtonSalirActionPerformed
